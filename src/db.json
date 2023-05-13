@@ -1,0 +1,19 @@
+{
+  "seller": [
+    {
+      "id": 1
+    },
+    {
+      "name": "Devershi Chandra",
+      "email": "devershi@chandra.com",
+      "password": "password",
+      "id": 2
+    },
+    {
+      "name": "Devershi",
+      "email": "dev@chandra.com",
+      "password": "password",
+      "id": 3
+    }
+  ]
+}
