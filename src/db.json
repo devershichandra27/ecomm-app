@@ -1,5 +1,5 @@
 {
-  "seller": [
+  "seller-auth": [
     {
       "id": 1
     },
@@ -14,6 +14,48 @@
       "email": "dev@chandra.com",
       "password": "password",
       "id": 3
+    },
+    {
+      "name": "Devershi",
+      "email": "dev@chandra.com",
+      "password": "password",
+      "id": 4
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 5
+    },
+    {
+      "name": "Devershi",
+      "password": "chadnra",
+      "email": "vnfi",
+      "id": 6
+    },
+    {
+      "name": "d",
+      "password": "d",
+      "email": "d",
+      "id": 7
+    },
+    {
+      "name": "d",
+      "password": "d",
+      "email": "d",
+      "id": 8
+    },
+    {
+      "name": "d",
+      "password": "d",
+      "email": "f",
+      "id": 9
+    },
+    {
+      "name": "de",
+      "password": "de",
+      "email": "",
+      "id": 10
     }
   ]
 }

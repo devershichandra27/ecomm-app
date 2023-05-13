@@ -1,0 +1,7 @@
+{
+    "/seller-auth": {
+      "target": "localhost:3000/seller-auth",
+      "secure": true,
+      "changeOrigin": true
+    }
+  }
