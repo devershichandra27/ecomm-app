@@ -10,11 +10,19 @@ import { SignUp } from '../data-type';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent implements OnInit {
-  constructor(private seller:SellerService, private router:Router){}
+  registered = false;
+  toggleRegistered() {
+    this.registered = !this.registered
+  }
+
+  constructor(private seller: SellerService, private router: Router) { }
   ngOnInit(): void {
     this.seller.reloadSeller()
   }
-  signUp(data : SignUp): void {
+  signUp(data: SignUp): void {
+    this.seller.userSignUpFunction(data)
+  }
+  login(data: SignUp) {
     this.seller.userSignUpFunction(data)
   }
 }
