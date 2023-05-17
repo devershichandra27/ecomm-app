@@ -11,6 +11,7 @@
     </div>
     <div *ngIf="registered" class="seller-login">
         <h1>Login Form</h1>
+        <p>{{this.authError}}</p>
         <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
             <input  class="form-input" ngModel name="email" type="email" placeholder="Enter your email">
             <input class="form-input" ngModel name="password" type="password" placeholder="Enter your password" >

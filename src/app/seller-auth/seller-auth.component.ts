@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
 import { SellerHomeComponent } from '../seller-home/seller-home.component';
-import { SignUp } from '../data-type';
+import { SellerLoginCredentials, SignUp } from '../data-type';
 
 @Component({
   selector: 'app-seller-auth',
@@ -11,6 +11,8 @@ import { SignUp } from '../data-type';
 })
 export class SellerAuthComponent implements OnInit {
   registered = false;
+  showLogin = false;
+  authError = "";
   toggleRegistered() {
     this.registered = !this.registered
   }
@@ -22,7 +24,12 @@ export class SellerAuthComponent implements OnInit {
   signUp(data: SignUp): void {
     this.seller.userSignUpFunction(data)
   }
-  login(data: SignUp) {
-    this.seller.userSignUpFunction(data)
+  login(data: SellerLoginCredentials) {
+    this.seller.sellerLogin(data)
+    this.seller.isLoginError.subscribe((isError) => {
+      if (isError){
+        this.authError = "Error in logging in.";
+      }
+    })
   }
 }
